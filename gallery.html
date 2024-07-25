@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+    
+        body {
+            background: black;
+            color: #f5f5dc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            color: white;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-size: 26px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+            width: 100%;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+
+        .nav a {
+            padding: 8px 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .nav a:hover {
+            background-color: #996633;
+        }
+
+        .header-background {
+            position: relative;
+            background-image: url('fammira.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .header-content {
+            position: relative;
+            color: white;
+            z-index: 1;
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 130px;
+            width: 40%;
+        }
+
+        .button-container-header {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .back-button,
+        .next-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .back-button:hover,
+        .next-button:hover {
+            background-color: #996633;
+        }
+        
+        .gallery-title {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 30px; 
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            margin-top: 20px; 
+        }
+
+        div.gallery {
+            border: 0px solid #663300;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        
+        div.gallery video {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.zoomed {
+    transform: scale(1.5); 
+    transition: transform 0.3s;
+}
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            color: white; 
+            font-family: Arial, sans-serif;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+            margin-top: 20px;
+            padding-left: 20px; 
+        }
+        
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            margin-top: 20px; 
+        }
+        
+         .nav-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            pointer-events: all;
+            padding: 10px;
+        }
+
+        .nav-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    </style>
+</head>
+
+<body>
+  
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    
+    <div class="header-background">
+        <div class="header-content">
+            <h1>WELCOME TO MIRA'S GALLERY!</h1>
+            <div class="button-container-header">
+                <a href="experience.html" class="back-button">&lt; Back</a>
+                <a href="contact.html" class="next-button">Next &gt;</a>
+            </div>
+        </div>
+    </div>
+    
+      <div class="gallery-title">PHOTO CORNER</div>
+
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="mira%201.jpg">
+                <img src="mira%201.jpg" width="600" height="280">
+            </a>
+            <div class="desc">At Kuching with her loved one!</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="mira%203%20.jpg">
+                <img src="mira%203%20.jpg" width="600" height="280">
+            </a>
+            <div class="desc">If minimalistic is a person, then it's her</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="red%20mira.jpg">
+                <img src="red%20mira.jpg" width="600" height="280">
+            </a>
+            <div class="desc">She's sweetness and elegance, all wrapped up in red</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ks2%20mira.jpg">
+                <img src="ks2%20mira.jpg" width="600" height="280">
+            </a>
+            <div class="desc">The world is her canvas. (I took this pic btw :p)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="raya%20mira.jpg">
+                <img src="raya%20mira.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Eid-tractive</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="mirabefday.jpg">
+                <img src="mirabefday.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Celebrating her 21st birthday. Happy Birthday!</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="blackmira.jpg">
+                <img src="blackmira.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Mira in black</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="white.jpg">
+                <img src="white.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Uhurmm, uwu girl</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="satin.jpg">
+                <img src="satin.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Definitely rocked in satin hijab </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="singkawang.jpg">
+                <img src="singkawang.jpg" width="600" height="280">
+            </a>
+            <div class="desc">⚲ Singkawang, Kalimantan Barat</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="putih.jpg">
+                <img src="putih.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Photoshoot nikah tapi pasangannya gaada</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="muamira.jpg">
+                <img src="muamira.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Her 'last resort' side income when she has no money</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="luckydraw.jpg">
+                <img src="luckydraw.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Not only she wins a lucky draw, but also her favourite lecturer's heart ^^</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="dinner.jpg">
+                <img src="dinner.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Gothic core (Poor Angel got cut in half lol)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="boo.jpg">
+                <img src="boo.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Could you see the resemblance?</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="beige.jpg">
+                <img src="beige.jpg" width="600" height="280">
+            </a>
+            <div class="desc">A girlboss who doesn't own a company</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="sambas.jpg">
+                <img src="sambas.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Doing what she loves the most in other country (Indonesia)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="selfievest.jpg">
+                <img src="selfievest.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Sunkissed? Nah, it's Sunkicked</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="trio.jpg">
+                <img src="trio.jpg" width="600" height="280">
+            </a>
+            <div class="desc">"Aku Bukan Ustazah" - UiTM ver.</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="dinnerred.jpg">
+                <img src="dinnerred.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Marvel Team</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="dinnerred2.jpg">
+                <img src="dinnerred2.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Her precious treasure (I think so?)</div>
+        </div>
+        
+         <div class="gallery">
+            <a target="_blank" href="miradeanlist.jpg">
+                <img src="miradeanlist.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Beauty with brain yall</div>
+        </div>
+        
+         <div class="gallery">
+            <a target="_blank" href="informsfamily.jpg">
+                <img src="informsfamily.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Informs Family 2023! </div>
+        </div>
+        
+         <div class="gallery">
+            <a target="_blank" href="lift.jpg">
+                <img src="lift.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Our first girls' staycation >< </div>
+        </div>
+             
+         <div class="gallery">
+            <a target="_blank" href="meow.jpg">
+                <img src="meow.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Luna and her "son" Louie (Louie is a boy trapped in a girl's body for real -^-) </div>
+        </div>
+             
+         <div class="gallery">
+            <a target="_blank" href="selfiebiru.jpg">
+                <img src="selfiebiru.jpg" width="600" height="280">
+            </a>
+            <div class="desc">She got 99 problems, but a bad angle selfie isn't one</div>
+        </div>
+             
+        <div class="gallery">
+            <a target="_blank" href="trioselfie.jpg">
+                <img src="trioselfie.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Stressed with your assignments? Capture it!</div>
+        </div>
+             
+         <div class="gallery">
+            <a target="_blank" href="antu.jpg">
+                <img src="antu.jpg" width="600" height="280">
+            </a>
+            <div class="desc">Jumpscare</div>
+        </div>
+
+    </div>
+        
+     
+        <div class="gallery-title">VIDEO CORNER</div>
+        
+<div class="gallery-container">    
+      
+        <div class="gallery">
+    <a target="_blank" href="slay.mp4">
+        <video width="600" height="280" controls>
+            <source src="slay.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">Pose like an angel, smile like an angel. The devil in disguise</div>
+</div>
+    
+       <div class="gallery">
+    <a target="_blank" href="whiteskirt.mp4">
+        <video width="600" height="280" controls>
+            <source src="whiteskirt.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">Lookin' like a lil angel today</div>
+</div>
+    
+     <div class="gallery">
+    <a target="_blank" href="skirtjeans.mp4">
+        <video width="600" height="280" controls>
+            <source src="skirtjeans.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">If she lates 5 seconds, she would have been met Allah by now</div>
+</div>
+    
+     <div class="gallery">
+    <a target="_blank" href="greenmira.mp4">
+        <video width="600" height="280" controls>
+            <source src="greenmira.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">"Reduce, Reuse, Recycle" Day!</div>
+</div>
+    
+    <div class="gallery">
+    <a target="_blank" href="triotejut.mp4">
+        <video width="600" height="280" controls>
+            <source src="triotejut.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">That fire represents our confidence fr</div>
+</div>
+    
+    <div class="gallery">
+    <a target="_blank" href="informstt.mp4">
+        <video width="600" height="280" controls>
+            <source src="informstt.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">"We do it with information" The information: </div>
+</div>
+    
+    <div class="gallery">
+    <a target="_blank" href="kozi.mp4">
+        <video width="600" height="280" controls>
+            <source src="kozi.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">At the end of the day, she's not that strong to face all the problems by herself</div>
+</div>
+    
+    <div class="gallery">
+    <a target="_blank" href="mekapkel.mp4">
+        <video width="600" height="280" controls>
+            <source src="mekapkel.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">Model of the day: Kel</div>
+</div>
+    
+    <div class="gallery">
+    <a target="_blank" href="shopping.mp4">
+        <video width="600" height="280" controls>
+            <source src="shopping.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">Paparazzi shot</div>
+</div>
+    
+    <div class="gallery">
+    <a target="_blank" href="bakso.mp4">
+        <video width="600" height="280" controls>
+            <source src="bakso.mp4" type="video/mp4">
+        </video>
+    </a>
+    <div class="desc">Anak bakso atau anak kambing yah?</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('div.gallery video').forEach(video => {
+            video.addEventListener('webkitfullscreenchange', exitHandler, false);
+            video.addEventListener('mozfullscreenchange', exitHandler, false);
+            video.addEventListener('fullscreenchange', exitHandler, false);
+            video.addEventListener('msfullscreenchange', exitHandler, false);
+        });
+    });
+
+    function exitHandler() {
+        if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null || document.fullscreenElement !== null) {
+            document.exitFullscreen();
+        }
+    }
+</script>
+
+
+</body>
+
+</html>
+
+
+
+       

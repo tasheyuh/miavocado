@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDUCATION</title>
+    
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            color: white;
+        }
+
+        h2,
+        h3 {
+            font-family: Arial, sans-serif;
+            font-size: 26px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+            width: 100%;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+
+        .nav a {
+            padding: 8px 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .nav a:hover {
+            background-color: #996633;
+        }
+
+        .header-background {
+            position: relative;
+            background-image: url('informs.jpg');
+            background-size: cover;
+            background-position: center top; 
+            height: 500px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .header-content {
+            position: relative;
+            color: white;
+            z-index: 1;
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 130px;
+            width: 40%;
+        }
+
+        .button-container {
+            display: flex; 
+            justify-content: flex-start; 
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 9px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: normal; 
+        }
+
+        .button-container a:hover {
+            background-color: #996633;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 70px;
+        }
+
+        .column {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2); 
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            color: white;
+            text-align: center;
+         
+        }
+
+        @media screen and (max-width: 300px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .intro {
+            text-align: left;
+            padding: 10px; 
+        }
+
+        .intro p,
+        .intro ul {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal; 
+        }
+
+        .intro ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .intro ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="header-background">
+        <div class="header-content">
+            <h1>EXPLORE MIRA'S EDUCATIONAL BACKGROUND</h1>
+            <div class="button-container">
+                <a href="index.html" class="back-button">&lt; Back</a>
+                <a href="experience.html" class="next-button">Next &gt;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="intro">
+                <h2>⚲ Secondary School: SMK Kota Samarahan</h2>
+                <p>SPM Results: 1A 3C+ 2C 1D</p>
+                <p>Achievements:</p>
+                <ul>
+                    <li>School prefect for 3 years.</li>
+                    <li>Participated in computer classes for 2 years.</li>
+                    <li>Cultural dancer for 4 years.</li>
+                    <li>Culinary & art student for 2 years.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="intro">
+                <h3>⚲ Universiti Teknologi Mara Kampus Samarahan</h3>
+                <p>CGPA:</p>
+                <ul>
+                    <li>Semester 1 - 2.99</li>
+                    <li>Semester 2 - 3.03</li>
+                    <li>Semester 3 - 3.28</li>
+                    <li>Semester 4 - 3.61</li>
+                </ul>
+                <p>Achievements:</p>
+                <ul>
+                    <li>Sports and Games Executive Committee for Community Service I</li>
+                    <li>Food Sports and Games Executive Committee for Community Service II</li>
+                    <li>Promotion Executive Committee for INFORMS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

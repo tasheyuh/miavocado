@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EXPERIENCE</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            background: black;
+            color: #f5f5dc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            color: white;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-size: 26px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+            width: 100%;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+
+        .nav a {
+            padding: 8px 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            background-color: #996633;
+        }
+
+        .header-background {
+            position: relative;
+            background-image: url('mua2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .header-content {
+            position: relative;
+            color: white;
+            z-index: 1;
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 130px;
+            width: 40%;
+        }
+
+        .button-container-header {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .back-button,
+        .next-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .back-button:hover,
+        .next-button:hover {
+            background-color: #996633;
+        }
+
+        .container {
+            padding: 8px;
+            background-color: transparent;
+            margin: 0 auto;
+            border-radius: 12px;
+            text-align: center;
+            width: 85%;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 70px;
+        }
+
+        .column {
+            flex: 0 0 calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .column img {
+            width: 100%;
+            max-width: 310px;
+            height: 250px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .column p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: match-parent;
+            padding: 0 10px;
+            font-weight: normal;
+        }
+
+        .see-more-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: normal;
+        }
+        
+          div.desc {
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .audio-container {
+    margin-top: 20px; 
+}
+
+
+        .see-more-button:hover {
+            background-color: #996633;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="header-background">
+        <div class="header-content">
+            <h1>CURIOUS OF WHAT MIRA HAD DONE IN HER LIFE? READ HERE!</h1>
+            <div class="button-container-header">
+                <a href="education.html" class="back-button">&lt; Back</a>
+                <a href="gallery.html" class="next-button">Next &gt;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="menari3.jpg" alt="Cultural Dance">
+                <p>She has been a cultural dancer since primary school, and she has been active in this field ever since. She is well-versed in various cultural dances from different ethnic groups in Malaysia.</p>
+            </div>
+            <div class="column">
+                <img src="food.jpg" alt="Culinary Class">
+                <p>Mira had joined a culinary class in high school for 2 years. She knows how to make various cuisines, especially Asian and Western cuisines, including desserts. Mmm, so yummy!</p>
+            </div>
+            <div class="column">
+                <img src="mua1.jpg" alt="Makeup Artist">
+                <p>She's also a self-taught MUA (Make-up Artist). FYI, she's also provided makeup services for many occasions as her side income. Incredible, isn't it?!</p>
+            </div>
+            <div class="column">
+                <img src="senamrobik.jpg" alt="Senamrobik">
+                <p>She often takes the lead in conducting aerobic sessions during programs. Look at her flying hihi >< </p>
+            </div>
+            <div class="column">
+                <img src="spa.jpg" alt="Spa">
+                <p>She also works as a beautician in Beylla Medispa, Kota Samarahan. Go visit her for treatment if you have time!</p>
+            </div>
+            <div class="column">
+                <img src="mcmira.jpg" alt="Emcee">
+                <p>Emcee for INFORMS' Dinner 2023.</p>
+            </div>
+        </div>
+        
+          <div class="audio-container gallery">
+    <a target="_blank" href="The Weeknd.mp3">
+        <audio controls>
+            <source src="The Weeknd.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </a>
+    <div class="desc">Give an earful to one of Mira's favourite singer, The Weekend - Is There Someone Else? </div>
+</div>
+        <a href="gallery.html" class="see-more-button">See More Pictures Here!</a>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
